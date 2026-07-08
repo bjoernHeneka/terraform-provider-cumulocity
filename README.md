@@ -1968,3 +1968,11 @@ TF_ACC=1 go test -v -timeout 120m ./internal/provider/...
 7. Open a pull request
 
 See the [`docs/`](docs/) directory for the full provider reference, including per-resource and per-data-source pages.
+
+---
+
+## License
+
+This provider is distributed under the [Mozilla Public License 2.0](LICENSE),
+the same license used by HashiCorp's official Terraform providers and the
+terraform-plugin-framework this provider is built on.

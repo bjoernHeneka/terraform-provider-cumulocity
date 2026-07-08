@@ -5,6 +5,8 @@
 This is a Terraform provider for the [Cumulocity IoT platform](https://www.cumulocity.com/api).
 It uses **terraform-plugin-framework** (not the legacy SDKv2).
 
+API reference (source of truth): the official [Cumulocity Core REST API documentation](https://cumulocity.com/api/core/), which also provides the OpenAPI specification. The spec is not vendored into this repository.
+
 Go module: `github.com/bjoernHeneka/terraform-provider-cumulocity`
 Provider address: `registry.terraform.io/bjoernHeneka/cumulocity`
 
@@ -15,8 +17,6 @@ Provider address: `registry.terraform.io/bjoernHeneka/cumulocity`
 ├── main.go                         # Provider entry point
 ├── go.mod                          # Go module file (run go mod tidy after changes)
 ├── GNUmakefile                     # build / test / install targets
-├── spec/
-│   └── c8y_spec.yaml               # Cumulocity OpenAPI 3.0.3 spec (source of truth)
 ├── internal/
 │   ├── client/
 │   │   └── client.go               # Typed HTTP client (Basic auth, doJSON helper)
@@ -71,7 +71,7 @@ Add request/response structs in the same file or a new file in `internal/client/
 - Sensitive fields (credentials, tokens) need `Sensitive: true` in the schema
 - Every resource implements `ImportState` via `resource.ImportStatePassthroughID`
 
-## Available API resources (from spec)
+## Available API resources
 
 Key resources to implement (full CRUD available):
 
