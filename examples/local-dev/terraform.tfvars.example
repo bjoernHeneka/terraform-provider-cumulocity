@@ -1,0 +1,7 @@
+# Kopiere diese Datei nach terraform.tfvars und fülle die Werte aus.
+# terraform.tfvars wird von Git ignoriert (sensible Daten).
+
+tenant_domain = "mytenant.cumulocity.com"
+tenant_id     = "t0071234"
+username      = "admin"
+password      = "dein-passwort"
