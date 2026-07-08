@@ -5,8 +5,8 @@ Built on **terraform-plugin-framework** (not the legacy SDKv2).
 
 | | |
 |---|---|
-| **Provider address** | `registry.terraform.io/org-codebee/cumulocity` |
-| **Go module** | `github.com/org-codebee/terraform-provider-cumulocity` |
+| **Provider address** | `registry.terraform.io/bjoernHeneka/cumulocity` |
+| **Go module** | `github.com/bjoernHeneka/terraform-provider-cumulocity` |
 | **Go version** | 1.24+ |
 | **terraform-plugin-framework** | v1.16+ |
 
@@ -86,7 +86,7 @@ Built on **terraform-plugin-framework** (not the legacy SDKv2).
 terraform {
   required_providers {
     cumulocity = {
-      source  = "registry.terraform.io/org-codebee/cumulocity"
+      source  = "registry.terraform.io/bjoernHeneka/cumulocity"
       version = "~> 0.1"
     }
   }
@@ -1793,7 +1793,7 @@ The public registry ingests GitHub releases automatically once the provider is c
 3. **Publish → Provider**, select the repository, and add the GPG public key (`public_key.asc`) when prompted.
 4. The registry picks up the latest valid release and ingests new tags automatically via webhook.
 
-The provider source address is then `org-codebee/cumulocity`.
+The provider source address is then `bjoernHeneka/cumulocity`.
 
 ### Option B — HCP Terraform private registry (app.terraform.io)
 
@@ -1854,7 +1854,7 @@ The easiest way to use the provider locally is to build it directly from the Git
 **1. Clone and build**
 
 ```bash
-git clone https://github.com/org-codebee/terraform-provider-cumulocity
+git clone https://github.com/bjoernHeneka/terraform-provider-cumulocity
 cd terraform-provider-cumulocity
 make install
 ```
@@ -1866,7 +1866,7 @@ make install
 ```hcl
 provider_installation {
   dev_overrides {
-    "registry.terraform.io/org-codebee/cumulocity" = "/Users/<you>/go/bin"
+    "registry.terraform.io/bjoernHeneka/cumulocity" = "/Users/<you>/go/bin"
   }
   direct {}
 }
@@ -1880,7 +1880,7 @@ Replace `/Users/<you>/go/bin` with the output of `go env GOPATH`/bin on your mac
 terraform {
   required_providers {
     cumulocity = {
-      source = "registry.terraform.io/org-codebee/cumulocity"
+      source = "registry.terraform.io/bjoernHeneka/cumulocity"
     }
   }
 }
@@ -1895,7 +1895,7 @@ Terraform will show a warning — this is expected:
 ```
 │ Warning: Provider development overrides are in effect
 │ The following provider development overrides are set in the CLI configuration:
-│  - registry.terraform.io/org-codebee/cumulocity in /Users/<you>/go/bin
+│  - registry.terraform.io/bjoernHeneka/cumulocity in /Users/<you>/go/bin
 ```
 
 **After every code change:**
@@ -1926,7 +1926,7 @@ Configure `~/.terraformrc` to use it:
 ```hcl
 provider_installation {
   dev_overrides {
-    "registry.terraform.io/org-codebee/cumulocity" = "/Users/<you>/go/bin"
+    "registry.terraform.io/bjoernHeneka/cumulocity" = "/Users/<you>/go/bin"
   }
   direct {}
 }

@@ -5,8 +5,8 @@ import (
 	"flag"
 	"log"
 
+	"github.com/bjoernHeneka/terraform-provider-cumulocity/internal/provider"
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-	"github.com/org-codebee/terraform-provider-cumulocity/internal/provider"
 )
 
 // version is set during release builds via -ldflags.
@@ -18,7 +18,7 @@ func main() {
 	flag.Parse()
 
 	err := providerserver.Serve(context.Background(), provider.New(version), providerserver.ServeOpts{
-		Address: "registry.terraform.io/org-codebee/cumulocity",
+		Address: "registry.terraform.io/bjoernHeneka/cumulocity",
 		Debug:   debug,
 	})
 	if err != nil {

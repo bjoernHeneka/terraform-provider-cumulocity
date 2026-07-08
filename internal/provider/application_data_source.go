@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/bjoernHeneka/terraform-provider-cumulocity/internal/client"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/org-codebee/terraform-provider-cumulocity/internal/client"
 )
 
 var _ datasource.DataSource = &applicationDataSource{}

@@ -1,4 +1,4 @@
-module github.com/org-codebee/terraform-provider-cumulocity
+module github.com/bjoernHeneka/terraform-provider-cumulocity
 
 go 1.24.0
 

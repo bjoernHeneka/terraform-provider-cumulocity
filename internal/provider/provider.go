@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/bjoernHeneka/terraform-provider-cumulocity/internal/client"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	"github.com/hashicorp/terraform-plugin-framework/provider/schema"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/org-codebee/terraform-provider-cumulocity/internal/client"
 )
 
 // Compile-time interface check.

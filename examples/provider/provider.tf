@@ -2,7 +2,7 @@
 terraform {
   required_providers {
     cumulocity = {
-      source  = "registry.terraform.io/org-codebee/cumulocity"
+      source  = "registry.terraform.io/bjoernHeneka/cumulocity"
       version = "~> 0.1"
     }
   }

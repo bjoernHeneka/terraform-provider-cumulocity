@@ -40,7 +40,7 @@ without a URL scheme or trailing path — because the base URL is constructed as
 terraform {
   required_providers {
     cumulocity = {
-      source  = "registry.terraform.io/org-codebee/cumulocity"
+      source  = "registry.terraform.io/bjoernHeneka/cumulocity"
       version = "~> 0.1"
     }
   }

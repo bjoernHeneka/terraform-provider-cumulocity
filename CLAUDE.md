@@ -5,8 +5,8 @@
 This is a Terraform provider for the [Cumulocity IoT platform](https://www.cumulocity.com/api).
 It uses **terraform-plugin-framework** (not the legacy SDKv2).
 
-Go module: `github.com/org-codebee/terraform-provider-cumulocity`
-Provider address: `registry.terraform.io/org-codebee/cumulocity`
+Go module: `github.com/bjoernHeneka/terraform-provider-cumulocity`
+Provider address: `registry.terraform.io/bjoernHeneka/cumulocity`
 
 ## Directory structure
 
@@ -114,7 +114,7 @@ make install
 ```hcl
 provider_installation {
   dev_overrides {
-    "registry.terraform.io/org-codebee/cumulocity" = "/path/to/your/bin"
+    "registry.terraform.io/bjoernHeneka/cumulocity" = "/path/to/your/bin"
   }
   direct {}
 }
